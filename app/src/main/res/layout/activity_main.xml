@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="8dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dp"
+        android:src="@drawable/icon_128" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi_height"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner_feet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spinner_inches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi_weight"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/weightET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        android:text="" />
+
+    <Button
+        android:id="@+id/reportBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcBMI"
+        android:text="@string/bmi_btn" />
+
+    <Button
+        android:id="@+id/aboutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showAbout"
+        android:text="@string/about_button" />
+
+</LinearLayout>
